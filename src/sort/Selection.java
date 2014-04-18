@@ -18,6 +18,7 @@ public class Selection {
 		}
 	}
 
+	// TODO change name of it
 	private static boolean less(Comparable v, Comparable w) {
 		return v.compareTo(w) < -1;
 	}
