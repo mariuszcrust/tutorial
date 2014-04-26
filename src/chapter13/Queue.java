@@ -2,6 +2,9 @@ package chapter13;
 
 import java.util.Iterator;
 
+import edu.princeton.cs.introcs.StdIn;
+import edu.princeton.cs.introcs.StdOut;
+
 public class Queue<Item> implements Iterable<Item> {
 
     private Node first;
@@ -72,7 +75,18 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     public static void main(String[] args) {
+        Stack<String> s = new Stack<String>();
 
+        while (!StdIn.isEmpty()) {
+            String item = StdIn.readString();
+            if (!item.equals("-")) {
+                s.push(item);
+            } else if (item.equals("-")) {
+                StdOut.print(s.pop() + " ");
+            }
+        }
+
+        StdOut.println("(" + s.size() + " left on stack)");
     }
 
 }

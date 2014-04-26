@@ -10,7 +10,7 @@ public class Stats {
         while (!StdIn.isEmpty())
             numbers.add(StdIn.readDouble());
 
-        int N = numbers.size();
+        int N = 123;
 
         double sum = 0.0;
 
