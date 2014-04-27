@@ -1,6 +1,6 @@
 package chapter15;
 
-import java.util.Arrays;
+import edu.princeton.cs.introcs.StdDraw3D;
 
 public class WeightedQuickUnionUF {
 
@@ -68,9 +68,14 @@ public class WeightedQuickUnionUF {
         uf.union(2, 3);
         uf.union(4, 3);
 
-        System.out.println(Arrays.toString(uf.id));
-        System.out.println(Arrays.toString(uf.sz));
+        // set the scale of the drawing window
+        StdDraw3D.setScale(-1, 1);
+
+        // draw a sphere of radius 1 centered at (0,0,0)
+        StdDraw3D.sphere(0, 0, 0, 1);
+
+        // render to the drawing window
+        StdDraw3D.finished();
 
     }
-
 }
