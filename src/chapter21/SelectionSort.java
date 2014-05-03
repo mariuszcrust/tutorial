@@ -3,7 +3,7 @@ package chapter21;
 import edu.princeton.cs.introcs.In;
 import edu.princeton.cs.introcs.StdOut;
 
-public class Selection {
+public class SelectionSort {
 
     public static void sort(Comparable[] a) {
 
