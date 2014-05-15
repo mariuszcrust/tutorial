@@ -1,7 +1,30 @@
-bin/shellsort/ShellSort.class
-bin/Shuffle.class
-bin/sort/Selection.class
-bin/stack/FiexedCapacityStackOfStrings.class
-bin/stack/LinkedStackOfStrings$Node.class
-bin/stack/LinkedStackOfStrings.class
-bin/stack/Stack.class
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin 
+.target
+
+# TeXlipse plugin
+.texlipse
